@@ -1,0 +1,27 @@
+"O dono de uma mercearia gostaria de criar um sistema para controle do estoque de seus produtos. 
+Cada produto é classificado por uma categoria distinta como Laticínio, Carne, Legume, etc, e identificados com uma descrição e um código de barras, que é único por produto. 
+
+Estes produtos são sempre adquiridos em Lotes, cada lote é identificado por uma numeração de 8 dígitos gerenciado pelo distribuidor de onde ele compra, em um lote pode vir diversos produtos diferentes, dependendo da necessidade da mercearia."
+
+
+Product
+
+id - integer
+description - varchar
+bar_code - varchar
+price - float
+amount - integer
+id_category
+
+Category
+
+id - integer
+description - varchar
+id_lot
+
+Lot
+
+id - integer
+code - varchar(8)
+
+ Crie um botão ou link que faça a exportação de produtos em formato XML.
